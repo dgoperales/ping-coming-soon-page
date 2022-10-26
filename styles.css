@@ -157,5 +157,44 @@ footer div span {
 /* RESPONSIVE */
 
 @media  screen and (min-width: 1440px) {
+    header img {
+        height: 2rem;
+        width: auto;
+    }
 
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.7rem;
+    }
+
+    main form {
+        flex-direction: row;
+        width: 50rem;
+    }
+
+    main form input {
+        height: 4.5rem;
+        width: 70%;
+    }
+
+    main form button {
+        height: 4.5rem;
+        width: 30%;
+    }
+
+    main form input::placeholder {
+        font-size: 1.4rem;
+    }
+
+    figure {
+        padding: 4rem 0rem 7rem 0rem;
+    }
+
+    figure img {
+        width: 50rem;
+        height: auto;
+    }
 }
