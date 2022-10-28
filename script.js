@@ -9,12 +9,11 @@ function validate() {
     if(validation.test(mail)) {
         errorInput.style.borderColor = 'hsl(223, 100%, 88%)'
         errorMessage.style.display = 'none';
+        button.innerHTML = 'Thank you'
         return true;
     } else {
         errorInput.style.borderColor = 'hsl(354, 100%, 66%)';
         errorMessage.style.display = 'block';
-        errorMessage.style.position = 'relative'; 
-        errorMessage.style.padding = '0 0 2rem 0';
         return false
     }
 }

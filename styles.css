@@ -85,6 +85,8 @@ main form input:focus {
 
 main form div {
     display: none;
+    position: relative;
+    padding-bottom: 1rem;
     text-align: center;
     font-size: 1rem;
     font-style: italic;
@@ -179,19 +181,33 @@ footer div span {
         font-size: 1.7rem;
     }
 
-    main form {
-        flex-direction: row;
+    main {
         width: 50rem;
+    }
+
+    main form {
+        width: 50rem;
+        display: grid;
+        grid-template-areas: "input button"
+                                "error error";
     }
 
     main form input {
         height: 4.5rem;
-        width: 70%;
+        width: 30rem;
+        grid-area: input;
+    }
+
+    main form div {
+        grid-area: error;
+        text-align: left;
+        padding-left: 2rem;
     }
 
     main form button {
         height: 4.5rem;
-        width: 30%;
+        width: 19rem;
+        grid-area: button;
     }
 
     main form input::placeholder {
